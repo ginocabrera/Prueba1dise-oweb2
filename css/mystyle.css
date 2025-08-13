@@ -1,0 +1,102 @@
+:root {
+    --color-general: #383838;
+    --color-titulos: #222;
+    --fondo-negro: #262728;
+    --fondo-rosado: #fee9da;
+    --color-gris: #c6c6c6;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    color: var(--color-general);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-titulos);
+}
+
+.section-title {
+    font-weight: 700;
+}
+
+
+.bg-dark-section {
+    background-color: var(--fondo-negro);
+}
+
+
+.hero-section h1 {
+    color: #fff;
+}
+.hero-section p {
+    color: #fff;
+}
+.hero-section .btn-outline-light:hover {
+    background: #fff;
+    color: var(--fondo-negro);
+}
+
+
+.trendy-section {
+    background-color: #fff;
+}
+
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+.service-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 39, 40, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.service-card:hover .service-overlay {
+    opacity: 1;
+}
+.service-title {
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.service-overlay.d-flex {
+    display: flex !important;
+}
+
+.products-section {
+    background-color: var(--fondo-rosado);
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 2rem;
+    border-left: 4px solid var(--color-gris);
+}
+.testimonial p {
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    background-color: var(--fondo-negro);
+}
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: var(--fondo-rosado);
+}
